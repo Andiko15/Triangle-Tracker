@@ -8,5 +8,10 @@ alert ("Equilateral")
 if ((a==b) || (b==c) || (a==c)) {
 alert ("Isosceles")
 }
-
+if ((a!==b) && (b!==c) && (a!==c)){
+alert ("Scalene")
+}
+else {
+alert ("Not a Triangle")
+}
 }
