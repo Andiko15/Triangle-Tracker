@@ -10,10 +10,10 @@ alert("Not a Triangle")
 if (a===b && b===c && a===c){
 alert ("Equilateral")
 }
-if (a==b || b==c || a==c) {
+else if (a==b || b==c || a==c) {
 alert ("Isosceles")
 }
-if (a!==b && b!==c && a!==c){
+else if (a!==b && b!==c && a!==c){
 alert ("Scalene")
 }
 else {
