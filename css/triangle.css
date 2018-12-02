@@ -14,7 +14,7 @@ form div + div {
 }
 li {
   text-align: left;
-  color: purple;
+  color: red;
 }
 .container {
   padding: 25px;
@@ -29,10 +29,10 @@ body {
 label {
   text-align: left;
   width: 90px;
-  display: inline-block;
+  display: inline-table;
 }
 input {
-  vertical-align: top;
+  vertical-align: middle;
   height: 1em;
   box-sizing: border-box;
 }
