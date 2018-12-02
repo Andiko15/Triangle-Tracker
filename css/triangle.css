@@ -1,4 +1,38 @@
 h1 {
   color: blue;
+  text-align: left;
+}
+form {
+  background-color: red;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+form div + div {
+  margin-top: 1em;
+}
+li {
+  text-align: left;
+  color: purple;
+}
+.container {
+  padding: 25px;
+  align-self: center;
   text-align: center;
+  background-color: green;
+
+}
+body {
+  background-color: yellow;
+}
+label {
+  text-align: left;
+  width: 90px;
+  display: inline-block;
+}
+input {
+  vertical-align: top;
+  height: 1em;
+  box-sizing: border-box;
 }
