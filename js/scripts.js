@@ -23,6 +23,7 @@ document.getElementById('answer').value ="Scalene";
 }
 }
 }
+event.preventDefault();
 function start() {
   document.getElementById("aValue").value="";
   document.getElementById("bValue").value="";
