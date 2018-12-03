@@ -1,21 +1,30 @@
-var a = parseInt(prompt("Enter side a"));
-var b = parseInt(prompt("Enter side b"));
-var c = parseInt(prompt("Enter side c"));
-if (isNaN(a) || isNaN(b) || isNaN(c)) {
-    alert("all sides must be numerical");
+function triangleType(){
+
+
+var A= parseInt(document.getElementById("a").value);
+var B = parseInt(document.getElementById("b").value);
+var C = parseInt(document.getElementById("c").value);
+/*if (isNaN(a) || isNaN(b) || isNaN(c)) {
+    document.getElementById('answer').value="all sides must be numerical";
+}*/
+
+if (A===B && B===C && A===C){
+ document.getElementById('answer').value ="Equilateral";
 }
-if (a >= (b + c) || b >= (c + a) || c >= (a + b)) {
-alert("Not a Triangle")
+else if (A==B || B==C || A==C) {
+document.getElementById('answer').value ="Isosceles";
 }
-if (a===b && b===c && a===c){
-alert ("Equilateral")
-}
-else if (a==b || b==c || a==c) {
-alert ("Isosceles")
-}
-else if (a!==b && b!==c && a!==c){
-alert ("Scalene")
-}
+else if (A!==B && B!==C && A!==C){
+  if (A >= (B + C) || B >= (C + A) || C >= (A + B)) {
+  document.getElementById('answer').value="Not a Triangle";
+  }
 else {
-alert ("Not a Triangle")
+document.getElementById('answer').value ="Scalene";
+}
+}
+}
+function start() {
+  document.getElementById("aValue").value="";
+  document.getElementById("bValue").value="";
+  document.getElementById("cValue").value="";
 }
